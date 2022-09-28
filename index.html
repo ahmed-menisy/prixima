@@ -27,12 +27,8 @@
       <!-- Custome Scss File -->
       <link rel="stylesheet" href="./css/style.css" />
    </head>
-   <body
-      style="overflow-x: hidden"
-      data-bs-spy="scroll"
-      data-bs-target="#nav-scroll"
-   >
-      <header class="header-top">
+   <body data-bs-spy="scroll" data-bs-target="#nav-scroll">
+      <header class="header-top" id="home">
          <div class="top bg-main">
             <div
                class="container d-lg-flex justify-content-between align-items-center text-center text-lg-start py-1"
@@ -145,52 +141,48 @@
             </div>
          </div>
       </nav>
-      <div class="fadeIn wow" data-wow-duration="2s">
-         <header class="home" id="home">
-            <!-- Set up your HTML -->
-            <div class="slider-wraper owl-carousel">
-               <div class="slide1 slide min-vh-100 hstack bg-cover">
-                  <div class="container">
-                     <div class="row">
-                        <div class="col-11 offset-1">
-                           <p>We craft digital experiances</p>
-                           <h1 class="py-3">
-                              We craft digital<br />experiances
-                           </h1>
-                           <div class="btns-start hstack gap-1">
-                              <button type="button" class="btn btn-main">
-                                 Get Started
-                              </button>
-                              <button
-                                 type="button"
-                                 class="btn btn-outline-light"
-                              >
-                                 Out Work
-                              </button>
-                           </div>
+      <header class="home">
+         <!-- Set up your HTML -->
+         <div
+            class="slider-wraper owl-carousel wow fadeIn"
+            data-wow-duration="2s"
+         >
+            <div class="slide1 slide min-vh-100 hstack bg-cover">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-11 offset-1">
+                        <p>We craft digital experiances</p>
+                        <h1 class="py-3">We craft digital<br />experiances</h1>
+                        <div class="btns-start hstack gap-1">
+                           <button type="button" class="btn btn-main">
+                              Get Started
+                           </button>
+                           <button type="button" class="btn btn-outline-light">
+                              Out Work
+                           </button>
                         </div>
                      </div>
                   </div>
                </div>
-               <div
-                  class="slide2 slide min-vh-100 hstack justify-content-center bg-cover"
-               >
-                  <div class="col-auto">
-                     <p>We craft digital experiances</p>
-                     <h2 class="py-3 h1">We craft digital<br />experiances</h2>
-                     <div class="btns-start hstack gap-1">
-                        <button type="button" class="btn btn-main">
-                           Get Started
-                        </button>
-                        <button type="button" class="btn btn-outline-light">
-                           Out Work
-                        </button>
-                     </div>
+            </div>
+            <div
+               class="slide2 slide min-vh-100 hstack justify-content-center bg-cover"
+            >
+               <div class="col-auto">
+                  <p>We craft digital experiances</p>
+                  <h2 class="py-3 h1">We craft digital<br />experiances</h2>
+                  <div class="btns-start hstack gap-1">
+                     <button type="button" class="btn btn-main">
+                        Get Started
+                     </button>
+                     <button type="button" class="btn btn-outline-light">
+                        Out Work
+                     </button>
                   </div>
                </div>
             </div>
-         </header>
-      </div>
+         </div>
+      </header>
       <main>
          <!-- -------------- Start About -------------- -->
          <section class="about" id="about">
@@ -795,12 +787,12 @@
          </section>
          <!-- -------------- End Team -------------- -->
          <!-- -------------- Start Team-info -------------- -->
-         <section
-            class="team-persone bg-cover wow bounceInUp"
-            data-wow-duration="1.2s"
-            data-wow-delay=".4s"
-         >
-            <div class="container">
+         <section class="team-persone bg-cover" id="reviews">
+            <div
+               class="container wow bounceInUp"
+               data-wow-duration="1.2s"
+               data-wow-delay=".4s"
+            >
                <div class="owl-carousel team-info__slider">
                   <div class="slider-info">
                      <div class="item">
