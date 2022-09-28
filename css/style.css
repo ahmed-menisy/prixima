@@ -287,4 +287,7 @@ footer::before {
    :root {
       font-size: 13px;
    }
+   .home :is(h1, h2) {
+      font-size: 2rem !important;
+   }
 }
