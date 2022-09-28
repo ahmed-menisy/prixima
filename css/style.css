@@ -1,0 +1,287 @@
+/* ------------ Start Global  ------------ */
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800&display=swap");
+* {
+   list-style: none;
+}
+a {
+   text-decoration: none;
+}
+body {
+   font-family: "Barlow", sans-serif;
+   color: rgb(9, 32, 50);
+}
+::-webkit-scrollbar {
+   width: 10px;
+}
+::-webkit-scrollbar-track {
+   background-color: #ccc;
+}
+::-webkit-scrollbar-thumb {
+   background-color: var(--main-color);
+}
+:root {
+   --main-color: rgb(254, 77, 41);
+   --duration: 0.5s;
+}
+section {
+   padding: 6rem 0;
+}
+.bg-main {
+   background-color: var(--main-color);
+}
+.text-main {
+   color: var(--main-color);
+}
+.btn-main {
+   background-color: var(--main-color);
+   color: #fff;
+}
+.btn-main:hover {
+   background-color: rgb(214, 74, 46);
+   color: #fff;
+}
+.bg-cover {
+   background-position: center !important;
+   background-size: cover !important;
+   background-repeat: no-repeat !important;
+}
+.top-index {
+   z-index: 999;
+}
+/* ------------ End Global  ------------ */
+/* ------------ Start header ------------ */
+.social a {
+   background-color: rgb(255 255 255 / 0.5);
+   color: #fff;
+   width: 30px;
+   height: 30px;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   font-size: 0.9rem;
+   transition: color var(--duration), background-color var(--duration);
+}
+.social a:hover {
+   color: var(--main-color);
+   background-color: #fff;
+}
+.navbar .navbar-nav .nav-link {
+   font-weight: 500;
+   color: #222;
+}
+.navbar .navbar-nav .nav-link.active {
+   color: var(--main-color);
+   font-weight: 700;
+}
+.home .slide1 {
+   background-image: url("../assets/img/bg_banner1.jpg");
+}
+.home .slide2 {
+   background-image: url("../assets/img/bg_banner2.jpg");
+}
+.home .slide {
+   color: #fff;
+   text-transform: uppercase;
+   position: relative;
+   z-index: 0;
+}
+.home .slide::before {
+   content: "";
+   position: absolute;
+   inset: 0;
+   background-color: rgb(0 0 0 / 0.4);
+   z-index: -1;
+}
+.home .slide p {
+   font-size: 1.2rem;
+   font-weight: 700;
+}
+.home .slide :is(h1,h2) {
+   font-size: 3rem;
+   font-weight: 800;
+}
+.home .slider-wraper :is(.owl-prev, .owl-next) {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   background-color: rgb(255 255 255 / 0.2) !important;
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+   margin: 0 0.5rem;
+   color: #fff !important;
+   font-weight: 700 !important;
+   font-size: 0.9rem !important;
+   transition: color var(--duration);
+}
+.home .slider-wraper :is(.owl-prev, .owl-next):hover {
+   color: var(--main-color) !important;
+}
+.home .slider-wraper .owl-prev {
+   left: 0;
+}
+.home .slider-wraper .owl-next {
+   right: 0;
+}
+/* ------------ End header ------------ */
+/* ------------ Start Counter ------------ */
+.count {
+   background-image: url("../assets/img/bg_banner1.jpg");
+   position: relative;
+   z-index: 0;
+}
+.count::before {
+   content: "";
+   position: absolute;
+   inset: 0;
+   background-color: var(--main-color);
+   opacity: 0.9;
+   z-index: -1;
+}
+.count .h1 {
+   font-size: 3.7rem;
+}
+/* ------------ End Counter ------------ */
+/* ------------ Start Portfolio ------------ */
+.portfolio .layer {
+   background-image: linear-gradient(
+      180deg,
+      transparent 40%,
+      rgba(9, 32, 50, 0) 40%,
+      #092032 100%
+   );
+}
+.portfolio h3 {
+   font-size: 1.7rem;
+   font-weight: 600;
+}
+.portfolio h4 {
+   font-size: small;
+}
+.portfolio h4::before {
+   content: "";
+   display: inline-block;
+   width: 30px;
+   height: 2px;
+   background-color: var(--main-color);
+   vertical-align: middle;
+   margin-right: 10px;
+}
+.owl-dots {
+   text-align: center;
+}
+.owl-dot {
+   width: 13px !important;
+   height: 13px !important;
+   background-color: #aaa !important;
+   border-radius: 50%;
+   margin: 0 5px;
+}
+.owl-dot.active {
+   background-color: var(--main-color) !important;
+}
+/* ------------ End Portfolio ------------ */
+/* ------------ Start team ------------ */
+.team .layer {
+   top: 0;
+   left: 0;
+   height: 90%;
+   width: 100%;
+   opacity: 0;
+   display: grid;
+   place-content: center;
+   background-color: rgba(254, 77, 41, 0.5);
+   transition: opacity var(--duration), height 0.3s;
+}
+.team .card:hover .layer {
+   height: 100%;
+   opacity: 1;
+}
+.team .layer a {
+   color: #fff;
+   display: grid;
+   place-content: center;
+   background-color: rgb(255 255 255 / 0.3);
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+}
+
+/* ------------ End team ------------ */
+/* ------------ Start team-info ------------ */
+.team-persone {
+   background-image: url("../assets/img/bg_banner1.jpg");
+   position: relative;
+   z-index: 0;
+   color: #fff;
+}
+.team-persone::before {
+   content: "";
+   position: absolute;
+   inset: 0;
+   z-index: -1;
+   background-color: rgba(9, 32, 50, 0.76);
+}
+.team-persone::after {
+   content: "\f10d";
+   font: var(--fa-font-solid);
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 8rem;
+   opacity: 0.1;
+}
+.team-persone .item {
+   text-align: center;
+}
+.team-persone img {
+   width: 100px !important;
+   height: 100px;
+   margin: auto;
+   border-radius: 50%;
+}
+.team-persone .star {
+   color: #ff4d29;
+}
+
+/* ------------ End team-info ------------ */
+/* ------------ Start Footer ------------ */
+footer {
+   background-image: url("../assets/img/bg_banner1.jpg");
+   position: relative;
+   z-index: 0;
+   color: #fff;
+}
+footer::before {
+   content: '';
+   position: absolute;
+   inset: 0;
+   z-index: -1;
+   background-color: rgba(9, 32, 50, 0.767);
+}
+/* ------------ End Footer ------------ */
+/* ------------ Start Contact ------------ */
+.contact .image img{
+  object-fit: cover;
+  height: 100%;
+}
+.contact .form-control {
+   border: unset !important;
+   outline: unset !important;
+   background-color: rgba(170, 170, 170, 0.199) !important;
+   color: var(--main-color);
+}
+.contact .form-control:focus {
+   box-shadow: unset;
+   border: 1px solid var(--main-color) !important;
+}
+/* ------------ End Contact ------------ */
+/* Start Media */
+@media (max-width:575.98px) {
+   :root {
+      font-size: 13px;
+   }
+}
